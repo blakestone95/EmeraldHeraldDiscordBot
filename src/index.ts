@@ -1,22 +1,22 @@
-import * as Discord from "discord.js";
+import * as Discord from 'discord.js';
 
-require('dotenv').config()
+require('dotenv').config();
 const client = new Discord.Client();
 
 /**
  * The ready event is vital, it means that only _after_ this will your bot start reacting to information
  * received from Discord
  */
-client.on("ready", () => {
-  console.log("I am ready!");
+client.on('ready', () => {
+  console.log('I am ready!');
 });
 
 // Create an event listener for messages
-client.on("message", (message) => {
+client.on('message', (message) => {
   // If the message is "ping"
-  if (message.content === "ping") {
+  if (message.content === 'ping') {
     // Send "pong" to the same channel
-    message.channel.send("pong");
+    message.channel.send('pong');
   }
 });
 

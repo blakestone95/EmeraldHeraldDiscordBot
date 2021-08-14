@@ -34,5 +34,11 @@
     "concurrently": "^6.2.1",
     "nodemon": "^2.0.12",
     "typescript": "^4.3.5"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120,
+    "tabWidth": 2,
+    "trailingComma": "es5"
   }
 }
