@@ -9,6 +9,7 @@
     "run:dev": "nodemon --watch dist dist/index.js",
     "build": "tsc",
     "build:dev": "tsc -w",
+    "deploy-commands": "node dist/deploy-commands.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,10 +27,15 @@
   },
   "homepage": "https://github.com/blakestone95/EmeraldHeraldDiscordBot#readme",
   "dependencies": {
-    "discord.js": "^12.5.3",
+    "@discordjs/builders": "^0.5.0",
+    "@discordjs/rest": "0.1.0-canary.0",
+    "better-sqlite3": "^7.4.3",
+    "discord-api-types": "^0.22.0",
+    "discord.js": "^13.1.0",
     "dotenv": "^10.0.0"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.4.0",
     "@types/node": "^16.6.1",
     "concurrently": "^6.2.1",
     "nodemon": "^2.0.12",
@@ -37,7 +43,6 @@
   },
   "prettier": {
     "singleQuote": true,
-    "printWidth": 120,
     "tabWidth": 2,
     "trailingComma": "es5"
   }
